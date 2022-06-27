@@ -766,7 +766,6 @@ class XRef {
       this._pendingRefs.remove(ref);
     } catch (ex) {
       this._pendingRefs.remove(ref);
-      throw ex;
     }
     if (xrefEntry instanceof Dict) {
       xrefEntry.objId = ref.toString();
